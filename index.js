@@ -19,7 +19,7 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-const channelID = process.env.CHANNEL_ID.split(",");
+// const channelID = process.env.CHANNEL_ID.split(",");
 
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
